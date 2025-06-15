@@ -16,8 +16,8 @@
              class="feature-card bg-white p-8 rounded-2xl border border-gray-100 card-hover group">
           <div class="flex items-start space-x-6">
             <div class="flex-shrink-0">
-              <div class="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center text-white text-xl font-bold">
-                {{ feature.icon }}
+              <div class="w-12 h-12 bg-gray-900 rounded-xl flex items-center justify-center text-white">
+                <component :is="feature.icon" class="w-6 h-6" />
               </div>
             </div>
             <div class="flex-1">
@@ -39,35 +39,43 @@
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import {
+  HandshakeIcon,
+  ArrowPathIcon,
+  BoltIcon,
+  RocketLaunchIcon,
+  ShieldCheckIcon,
+  TargetIcon
+} from '@heroicons/vue/24/outline'
 
 const features = [
   {
-    icon: '🤝',
+    icon: HandshakeIcon,
     title: 'Strategic Tech Partnership',
     description: 'We don\'t just deliver services we become your tech partner, aligning our expertise with your goals to drive real impact.'
   },
   {
-    icon: '🔄',
+    icon: ArrowPathIcon,
     title: 'Scalable Innovation',
     description: 'We harness emerging technologies to enable you to disrupt your industry and grow without limits.'
   },
   {
-    icon: '⚡',
+    icon: BoltIcon,
     title: 'Optimised IT Efficiency',
     description: 'We focus on performance, reliability, and results ensuring your IT works smarter, faster, and better.'
   },
   {
-    icon: '🚀',
+    icon: RocketLaunchIcon,
     title: 'Agile & Reliable Deployment',
     description: 'We ensure rapid, reliable deployments through an agile approach that minimizes downtime and safeguards business continuity.'
   },
   {
-    icon: '🛡️',
+    icon: ShieldCheckIcon,
     title: 'Proactive IT Continuity',
     description: 'We monitor your systems 24/7, solving issues before they arise and keeping your business running smoothly.'
   },
   {
-    icon: '🎯',
+    icon: TargetIcon,
     title: 'Results-Driven Approach',
     description: 'Every solution is designed with measurable outcomes in mind, ensuring maximum ROI and business impact.'
   }
