@@ -8,9 +8,13 @@
   }
   
   body {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     line-height: 1.6;
     color: #1f2937;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Guminert New', system-ui, sans-serif;
   }
 }
 
@@ -37,6 +41,14 @@
   
   .gradient-text {
     @apply bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 bg-clip-text text-transparent;
+  }
+
+  .font-heading {
+    font-family: 'Guminert New', system-ui, sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Poppins', system-ui, sans-serif;
   }
 }
 
