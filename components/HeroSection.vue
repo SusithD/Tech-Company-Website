@@ -1,11 +1,11 @@
 <template>
-  <section class="min-h-screen bg-white flex items-center justify-center pt-32 md:pt-36">
-    <div class="container-custom">
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
+  <section class="min-h-screen bg-white flex items-start justify-center pt-24 md:pt-36">
+    <div class="w-full max-w-7xl mx-auto pl-0 pr-4 sm:pl-0 sm:pr-6 lg:pl-2 lg:pr-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
         <!-- Left Content -->
-        <div class="hero-content">
+        <div class="hero-content pl-4 sm:pl-6 lg:pl-4">
           <!-- Badge -->
-          <div class="inline-flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <div class="inline-flex items-center bg-gray-100 text-gray-700 px-2 py-2 rounded-full text-sm font-medium mb-6">
             <CheckCircleIcon class="w-3 h-3 text-green-500 mr-2" />
             Trusted by Fortune 500 Companies
           </div>
@@ -20,37 +20,6 @@
             We architect, build, and deploy scalable technology solutions that transform how enterprises operate. 
             From cloud migration to AI integration, we deliver measurable business outcomes with 98% client satisfaction.
           </p>
-
-          <!-- Key Benefits -->
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-            <div class="flex items-center space-x-2">
-              <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
-                <BoltIcon class="w-4 h-4 text-blue-600" />
-              </div>
-              <div>
-                <div class="text-gray-900 font-semibold text-sm">Fast Delivery</div>
-                <div class="text-gray-600 text-xs">30% faster than industry average</div>
-              </div>
-            </div>
-            <div class="flex items-center space-x-2">
-              <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
-                <CheckIcon class="w-4 h-4 text-green-600" />
-              </div>
-              <div>
-                <div class="text-gray-900 font-semibold text-sm">Proven Results</div>
-                <div class="text-gray-600 text-xs">500+ successful projects</div>
-              </div>
-            </div>
-            <div class="flex items-center space-x-2">
-              <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                <ShieldCheckIcon class="w-4 h-4 text-purple-600" />
-              </div>
-              <div>
-                <div class="text-gray-900 font-semibold text-sm">Enterprise Security</div>
-                <div class="text-gray-600 text-xs">SOC 2 & ISO certified</div>
-              </div>
-            </div>
-          </div>
           
           <div class="flex flex-col sm:flex-row items-start gap-4 mb-8">
             <button class="btn-primary text-md px-10 py-4 shadow-lg">
@@ -78,96 +47,126 @@
         
         <!-- Right Content -->
         <div class="hero-right">
-          <!-- Main Card -->
-          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 mb-6">
-            <div class="text-center mb-6">
-              <h3 class="text-2xl font-bold text-gray-900 mb-2">
-                Enterprise Solutions That Scale
+          <!-- Main Card - Enhanced Prominence -->
+          <div class="bg-white rounded-2xl p-10 border-2 border-gray-200 mb-6 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div class="text-center mb-10">
+              <div class="inline-flex items-center bg-gray-900 text-white px-4 py-2 rounded-full text-xs font-semibold mb-4 tracking-wide">
+                ENTERPRISE SOLUTIONS
+              </div>
+              <h3 class="text-3xl font-bold text-gray-900 mb-4 font-heading">
+                Solutions That Scale With You
               </h3>
-              <p class="text-gray-600">
-                From startup to Fortune 500, we deliver technology solutions that grow with your business.
+              <p class="text-gray-600 font-body text-base leading-relaxed">
+                Enterprise-grade technology solutions designed for sustainable growth and digital transformation.
               </p>
             </div>
             
-            <!-- Services Grid -->
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="bg-white p-4 rounded-xl border border-gray-200">
-                <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mb-3">
-                  <CloudIcon class="w-4 h-4 text-blue-600" />
+            <!-- Minimal Services List with Enhanced Animations -->
+            <div class="space-y-4 mb-8">
+              <div class="service-item flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+                <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-blue-50 transition-all duration-300 group-hover:scale-110">
+                  <CloudIcon class="w-5 h-5 text-gray-600 group-hover:text-blue-600 transition-all duration-300 group-hover:rotate-3" />
                 </div>
-                <div class="text-gray-900 font-semibold text-sm mb-1">Cloud Migration</div>
-                <div class="text-gray-600 text-xs">AWS, Azure, GCP</div>
+                <div class="flex-1">
+                  <div class="text-gray-900 font-semibold text-sm group-hover:text-blue-900 transition-colors duration-300">Cloud Migration</div>
+                  <div class="text-gray-500 text-xs group-hover:text-blue-600 transition-colors duration-300">AWS • Azure • GCP</div>
+                </div>
+                <div class="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
+                  <div class="text-blue-600 text-sm">→</div>
+                </div>
               </div>
-              <div class="bg-white p-4 rounded-xl border border-gray-200">
-                <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mb-3">
-                  <CpuChipIcon class="w-4 h-4 text-purple-600" />
+              
+              <div class="service-item flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+                <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-purple-50 transition-all duration-300 group-hover:scale-110">
+                  <CpuChipIcon class="w-5 h-5 text-gray-600 group-hover:text-purple-600 transition-all duration-300 group-hover:-rotate-3" />
                 </div>
-                <div class="text-gray-900 font-semibold text-sm mb-1">AI Integration</div>
-                <div class="text-gray-600 text-xs">ML, Automation</div>
+                <div class="flex-1">
+                  <div class="text-gray-900 font-semibold text-sm group-hover:text-purple-900 transition-colors duration-300">AI Integration</div>
+                  <div class="text-gray-500 text-xs group-hover:text-purple-600 transition-colors duration-300">ML • Automation • Analytics</div>
+                </div>
+                <div class="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
+                  <div class="text-purple-600 text-sm">→</div>
+                </div>
               </div>
-              <div class="bg-white p-4 rounded-xl border border-gray-200">
-                <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mb-3">
-                  <DevicePhoneMobileIcon class="w-4 h-4 text-green-600" />
+              
+              <div class="service-item flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+                <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-green-50 transition-all duration-300 group-hover:scale-110">
+                  <DevicePhoneMobileIcon class="w-5 h-5 text-gray-600 group-hover:text-green-600 transition-all duration-300 group-hover:rotate-6" />
                 </div>
-                <div class="text-gray-900 font-semibold text-sm mb-1">App Development</div>
-                <div class="text-gray-600 text-xs">Web, Mobile, API</div>
+                <div class="flex-1">
+                  <div class="text-gray-900 font-semibold text-sm group-hover:text-green-900 transition-colors duration-300">App Development</div>
+                  <div class="text-gray-500 text-xs group-hover:text-green-600 transition-colors duration-300">Web • Mobile • API</div>
+                </div>
+                <div class="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
+                  <div class="text-green-600 text-sm">→</div>
+                </div>
               </div>
-              <div class="bg-white p-4 rounded-xl border border-gray-200">
-                <div class="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mb-3">
-                  <LockClosedIcon class="w-4 h-4 text-orange-600" />
+              
+              <div class="service-item flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+                <div class="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-orange-50 transition-all duration-300 group-hover:scale-110">
+                  <LockClosedIcon class="w-5 h-5 text-gray-600 group-hover:text-orange-600 transition-all duration-300 group-hover:-rotate-6" />
                 </div>
-                <div class="text-gray-900 font-semibold text-sm mb-1">Cybersecurity</div>
-                <div class="text-gray-600 text-xs">Zero Trust, SOC</div>
+                <div class="flex-1">
+                  <div class="text-gray-900 font-semibold text-sm group-hover:text-orange-900 transition-colors duration-300">Cybersecurity</div>
+                  <div class="text-gray-500 text-xs group-hover:text-orange-600 transition-colors duration-300">Zero Trust • Compliance</div>
+                </div>
+                <div class="w-0 group-hover:w-4 transition-all duration-300 overflow-hidden">
+                  <div class="text-orange-600 text-sm">→</div>
+                </div>
               </div>
             </div>
 
-            <!-- Client Success Metrics -->
-            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 rounded-xl">
-              <div class="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div class="text-2xl font-bold">98%</div>
-                  <div class="text-xs opacity-90">Success Rate</div>
+            <!-- Enhanced Success Metrics -->
+            <div class="bg-gray-900 text-white p-8 rounded-xl">
+              <div class="grid grid-cols-3 gap-6 text-center">
+                <div class="metric-item">
+                  <div class="text-2xl font-bold mb-1 counter" data-target="98">0</div>
+                  <div class="text-xs text-gray-300">Success Rate</div>
                 </div>
-                <div>
-                  <div class="text-2xl font-bold">24/7</div>
-                  <div class="text-xs opacity-90">Support</div>
+                <div class="metric-item border-l border-r border-gray-700">
+                  <div class="text-2xl font-bold mb-1">24/7</div>
+                  <div class="text-xs text-gray-300">Support</div>
                 </div>
-                <div>
-                  <div class="text-2xl font-bold">15+</div>
-                  <div class="text-xs opacity-90">Years Experience</div>
+                <div class="metric-item">
+                  <div class="text-2xl font-bold mb-1 counter" data-target="15">0</div>
+                  <div class="text-xs text-gray-300">Years Exp.</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Secondary Trust Card -->
-          <div class="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm">
+          <!-- Minimal Secondary Card -->
+          <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all duration-300">
             <div class="flex items-center justify-between mb-4">
               <div>
-                <div class="text-gray-900 font-bold text-lg">Recent Success</div>
-                <div class="text-gray-600 text-sm">Global Manufacturing Corp</div>
+                <div class="text-gray-900 font-semibold text-base">Recent Success</div>
+                <div class="text-gray-500 text-sm">Manufacturing Corp</div>
               </div>
               <div class="text-right">
-                <div class="text-green-600 font-bold text-xl">+300%</div>
-                <div class="text-gray-600 text-xs">Efficiency Gain</div>
+                <div class="text-gray-900 font-bold text-xl">+300%</div>
+                <div class="text-gray-500 text-xs">Efficiency</div>
               </div>
             </div>
-            <div class="flex items-center space-x-3">
-              <div class="flex -space-x-2">
-                <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full border-2 border-white flex items-center justify-center">
-                  <span class="text-white font-bold text-xs">JD</span>
+            
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-3">
+                <div class="flex -space-x-1">
+                  <div class="w-8 h-8 bg-gray-200 rounded-full border-2 border-white flex items-center justify-center">
+                    <span class="text-gray-600 font-medium text-xs">JD</span>
+                  </div>
+                  <div class="w-8 h-8 bg-gray-300 rounded-full border-2 border-white flex items-center justify-center">
+                    <span class="text-gray-700 font-medium text-xs">MK</span>
+                  </div>
+                  <div class="w-8 h-8 bg-gray-400 rounded-full border-2 border-white flex items-center justify-center">
+                    <span class="text-white font-medium text-xs">SP</span>
+                  </div>
                 </div>
-                <div class="w-8 h-8 bg-gradient-to-r from-purple-600 to-blue-800 rounded-full border-2 border-white flex items-center justify-center">
-                  <span class="text-white font-bold text-xs">MK</span>
-                </div>
-                <div class="w-8 h-8 bg-gradient-to-r from-blue-800 to-blue-600 rounded-full border-2 border-white flex items-center justify-center">
-                  <span class="text-white font-bold text-xs">SP</span>
+                <div>
+                  <div class="text-gray-900 font-medium text-sm">Executive Team</div>
                 </div>
               </div>
-              <div class="text-left">
-                <div class="text-gray-900 font-semibold text-sm">C-Level Team</div>
-                <div class="text-gray-600 text-xs">Direct stakeholder engagement</div>
-              </div>
+              
+              <div class="w-2 h-2 bg-green-500 rounded-full"></div>
             </div>
           </div>
         </div>
@@ -231,6 +230,76 @@ onMounted(() => {
       { opacity: 0, y: 20 },
       { opacity: 1, y: 0, duration: 0.6, delay: 0.8, stagger: 0.1, ease: 'power3.out' }
     )
+
+    // Animate service items with stagger
+    gsap.fromTo('.service-item', 
+      { opacity: 0, y: 30, scale: 0.9 },
+      { 
+        opacity: 1, 
+        y: 0, 
+        scale: 1,
+        duration: 0.6, 
+        delay: 1.2, 
+        stagger: 0.1, 
+        ease: 'back.out(1.7)' 
+      }
+    )
+
+    // Counter animation for metrics
+    const animateCounter = (element, target) => {
+      gsap.to(element, {
+        innerHTML: target,
+        duration: 2,
+        delay: 1.5,
+        ease: 'power2.out',
+        snap: { innerHTML: 1 },
+        onUpdate: function() {
+          element.innerHTML = Math.ceil(element.innerHTML) + (target === 98 ? '%' : '+')
+        }
+      })
+    }
+
+    // Initialize counters
+    const counters = document.querySelectorAll('.counter')
+    counters.forEach(counter => {
+      const target = parseInt(counter.dataset.target)
+      animateCounter(counter, target)
+    })
+
+    // Add click handlers for service items
+    const serviceItems = document.querySelectorAll('.service-item')
+    serviceItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // Add a subtle pulse animation on click
+        gsap.to(item, {
+          scale: 0.95,
+          duration: 0.1,
+          yoyo: true,
+          repeat: 1,
+          ease: 'power2.inOut'
+        })
+      })
+    })
+
+    // Animate metric items on hover
+    const metricItems = document.querySelectorAll('.metric-item')
+    metricItems.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        gsap.to(item, {
+          scale: 1.05,
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+      })
+      
+      item.addEventListener('mouseleave', () => {
+        gsap.to(item, {
+          scale: 1,
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+      })
+    })
   }
 })
 </script>
