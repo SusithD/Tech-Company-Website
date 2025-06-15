@@ -20,14 +20,50 @@
             We architect, build, and deploy scalable technology solutions that transform how enterprises operate. 
             From cloud migration to AI integration, we deliver measurable business outcomes with 98% client satisfaction.
           </p>
-          
-          <div class="flex flex-col sm:flex-row items-start gap-4 mb-8">
-            <button class="btn-primary text-md px-10 py-4 shadow-lg">
-              Schedule Free Consultation →
-            </button>
-            <button class="btn-secondary text-md px-10 py-4">
-              View Case Studies
-            </button>
+
+          <div class="space-y-8">
+            <div class="bg-white p-6 rounded-2xl border border-gray-600 hover:border-gray-900 transition-all duration-300">
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="text-gray-900 font-semibold text-base">Recent Success</div>
+                  <div class="text-gray-500 text-sm">Manufacturing Corp</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-gray-900 font-bold text-xl">+300%</div>
+                  <div class="text-gray-500 text-xs">Efficiency</div>
+                </div>
+              </div>
+              
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <div class="flex -space-x-1">
+                    <div class="w-8 h-8 bg-gray-200 rounded-full border-2 border-white flex items-center justify-center">
+                      <span class="text-gray-600 font-medium text-xs">JD</span>
+                    </div>
+                    <div class="w-8 h-8 bg-gray-300 rounded-full border-2 border-white flex items-center justify-center">
+                      <span class="text-gray-700 font-medium text-xs">MK</span>
+                    </div>
+                    <div class="w-8 h-8 bg-gray-400 rounded-full border-2 border-white flex items-center justify-center">
+                      <span class="text-white font-medium text-xs">SP</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="text-gray-900 font-medium text-sm">Executive Team</div>
+                  </div>
+                </div>
+                
+                <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+              </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-start gap-4">
+              <button class="btn-primary text-md px-10 py-4 shadow-lg">
+                Schedule Free Consultation →
+              </button>
+              <button class="btn-secondary text-md px-10 py-4">
+                View Case Studies
+              </button>
+            </div>
           </div>
 
           <!-- Trust Indicators -->
@@ -134,62 +170,36 @@
               </div>
             </div>
           </div>
-
-          <!-- Minimal Secondary Card -->
-          <div class="bg-white p-6 rounded-2xl border border-gray-100 hover:border-gray-200 transition-all duration-300">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <div class="text-gray-900 font-semibold text-base">Recent Success</div>
-                <div class="text-gray-500 text-sm">Manufacturing Corp</div>
-              </div>
-              <div class="text-right">
-                <div class="text-gray-900 font-bold text-xl">+300%</div>
-                <div class="text-gray-500 text-xs">Efficiency</div>
-              </div>
-            </div>
-            
-            <div class="flex items-center justify-between">
-              <div class="flex items-center space-x-3">
-                <div class="flex -space-x-1">
-                  <div class="w-8 h-8 bg-gray-200 rounded-full border-2 border-white flex items-center justify-center">
-                    <span class="text-gray-600 font-medium text-xs">JD</span>
-                  </div>
-                  <div class="w-8 h-8 bg-gray-300 rounded-full border-2 border-white flex items-center justify-center">
-                    <span class="text-gray-700 font-medium text-xs">MK</span>
-                  </div>
-                  <div class="w-8 h-8 bg-gray-400 rounded-full border-2 border-white flex items-center justify-center">
-                    <span class="text-white font-medium text-xs">SP</span>
-                  </div>
-                </div>
-                <div>
-                  <div class="text-gray-900 font-medium text-sm">Executive Team</div>
-                </div>
-              </div>
-              
-              <div class="w-2 h-2 bg-green-500 rounded-full"></div>
-            </div>
-          </div>
         </div>
       </div>
 
-      <!-- Bottom Stats Bar -->
+      <!-- Enhanced Interactive Stats Bar -->
       <div class="mt-16 pt-8 border-t border-gray-200">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div class="text-3xl font-bold text-gray-900 mb-2">500+</div>
-            <div class="text-gray-600 text-sm">Projects Delivered</div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="stat-item text-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+            <div class="text-3xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300 counter-stat" data-target="500">0</div>
+            <div class="text-gray-600 text-sm group-hover:text-gray-800 transition-colors duration-300">Projects Delivered</div>
+            <div class="w-0 group-hover:w-8 h-0.5 bg-blue-600 mx-auto mt-2 transition-all duration-300"></div>
           </div>
-          <div>
-            <div class="text-3xl font-bold text-gray-900 mb-2">150+</div>
-            <div class="text-gray-600 text-sm">Enterprise Clients</div>
+          
+          <div class="stat-item text-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+            <div class="text-3xl font-bold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors duration-300 counter-stat" data-target="150">0</div>
+            <div class="text-gray-600 text-sm group-hover:text-gray-800 transition-colors duration-300">Enterprise Clients</div>
+            <div class="w-0 group-hover:w-8 h-0.5 bg-purple-600 mx-auto mt-2 transition-all duration-300"></div>
           </div>
-          <div>
-            <div class="text-3xl font-bold text-gray-900 mb-2">25+</div>
-            <div class="text-gray-600 text-sm">Countries Served</div>
+          
+          <div class="stat-item text-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+            <div class="text-3xl font-bold text-gray-900 mb-2 group-hover:text-green-600 transition-colors duration-300 counter-stat" data-target="25">0</div>
+            <div class="text-gray-600 text-sm group-hover:text-gray-800 transition-colors duration-300">Countries Served</div>
+            <div class="w-0 group-hover:w-8 h-0.5 bg-green-600 mx-auto mt-2 transition-all duration-300"></div>
           </div>
-          <div>
-            <div class="text-3xl font-bold text-gray-900 mb-2">99.9%</div>
-            <div class="text-gray-600 text-sm">Uptime SLA</div>
+          
+          <div class="stat-item text-center p-4 rounded-xl hover:bg-gray-50 transition-all duration-300 cursor-pointer group">
+            <div class="text-3xl font-bold text-gray-900 mb-2 group-hover:text-orange-600 transition-colors duration-300">
+              <span class="counter-stat" data-target="99.9">0</span>%
+            </div>
+            <div class="text-gray-600 text-sm group-hover:text-gray-800 transition-colors duration-300">Uptime SLA</div>
+            <div class="w-0 group-hover:w-8 h-0.5 bg-orange-600 mx-auto mt-2 transition-all duration-300"></div>
           </div>
         </div>
       </div>
@@ -295,6 +305,57 @@ onMounted(() => {
       item.addEventListener('mouseleave', () => {
         gsap.to(item, {
           scale: 1,
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+      })
+    })
+
+    // Enhanced stats bar animation
+    const statItems = document.querySelectorAll('.stat-item')
+    statItems.forEach(item => {
+      const counterStat = item.querySelector('.counter-stat')
+      const target = parseInt(counterStat.dataset.target)
+
+      // Initial state
+      gsap.set(counterStat, { innerHTML: 0 })
+
+      item.addEventListener('mouseenter', () => {
+        // Scale up on hover
+        gsap.to(item, {
+          scale: 1.05,
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+
+        // Animate counter
+        animateCounter(counterStat, target)
+
+        // Underline animation
+        gsap.to(item.querySelector('div.w-0'), {
+          width: '100%',
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+      })
+      
+      item.addEventListener('mouseleave', () => {
+        gsap.to(item, {
+          scale: 1,
+          duration: 0.3,
+          ease: 'power2.out'
+        })
+
+        // Reset counter
+        gsap.to(counterStat, {
+          innerHTML: 0,
+          duration: 0.1,
+          ease: 'power2.out'
+        })
+
+        // Reset underline
+        gsap.to(item.querySelector('div.w-0'), {
+          width: 0,
           duration: 0.3,
           ease: 'power2.out'
         })
