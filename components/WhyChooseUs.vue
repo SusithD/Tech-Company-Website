@@ -40,17 +40,17 @@ import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import {
-  HandshakeIcon,
+  UserGroupIcon,
   ArrowPathIcon,
   BoltIcon,
   RocketLaunchIcon,
   ShieldCheckIcon,
-  TargetIcon
+  ChartBarIcon
 } from '@heroicons/vue/24/outline'
 
 const features = [
   {
-    icon: HandshakeIcon,
+    icon: UserGroupIcon,
     title: 'Strategic Tech Partnership',
     description: 'We don\'t just deliver services we become your tech partner, aligning our expertise with your goals to drive real impact.'
   },
@@ -75,7 +75,7 @@ const features = [
     description: 'We monitor your systems 24/7, solving issues before they arise and keeping your business running smoothly.'
   },
   {
-    icon: TargetIcon,
+    icon: ChartBarIcon,
     title: 'Results-Driven Approach',
     description: 'Every solution is designed with measurable outcomes in mind, ensuring maximum ROI and business impact.'
   }
