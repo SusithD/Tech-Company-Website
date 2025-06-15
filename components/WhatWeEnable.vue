@@ -15,7 +15,7 @@
         <div v-for="service in services" :key="service.title" 
              class="service-card bg-white p-8 rounded-2xl border border-gray-100 card-hover group">
           <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-gray-900 transition-colors">
-            <span class="text-2xl group-hover:text-white transition-colors">{{ service.icon }}</span>
+            <component :is="service.icon" class="w-6 h-6 text-gray-600 group-hover:text-white transition-colors" />
           </div>
           <h3 class="text-xl font-bold mb-4 text-gray-900">
             {{ service.title }}
@@ -33,35 +33,43 @@
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { 
+  RocketLaunchIcon,
+  ShieldCheckIcon,
+  CloudIcon,
+  CpuChipIcon,
+  DevicePhoneMobileIcon,
+  BoltIcon
+} from '@heroicons/vue/24/outline'
 
 const services = [
   {
-    icon: '🚀',
+    icon: RocketLaunchIcon,
     title: 'Digital Innovation',
     description: 'Transform your business with cutting-edge digital solutions that drive growth and efficiency.'
   },
   {
-    icon: '🛡️',
+    icon: ShieldCheckIcon,
     title: 'Cybersecurity',
     description: 'Protect your digital assets with enterprise-grade security solutions and monitoring.'
   },
   {
-    icon: '☁️',
+    icon: CloudIcon,
     title: 'Cloud Solutions',
     description: 'Migrate and optimize your infrastructure with scalable cloud technologies.'
   },
   {
-    icon: '🤖',
+    icon: CpuChipIcon,
     title: 'AI & Machine Learning',
     description: 'Harness the power of artificial intelligence to automate and optimize operations.'
   },
   {
-    icon: '📱',
+    icon: DevicePhoneMobileIcon,
     title: 'Mobile Development',
     description: 'Create powerful mobile applications that engage users and drive business value.'
   },
   {
-    icon: '⚡',
+    icon: BoltIcon,
     title: 'Performance Optimization',
     description: 'Enhance system performance and reliability with advanced optimization techniques.'
   }
