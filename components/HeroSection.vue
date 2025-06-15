@@ -1,5 +1,5 @@
 <template>
-  <section class="min-h-screen bg-white flex items-center justify-center pt-20">
+  <section class="min-h-screen bg-white flex items-center justify-center pt-32 md:pt-36">
     <div class="container-custom">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <!-- Left Content -->
@@ -16,7 +16,7 @@
             <span class="block gradient-text">that delivers results.</span>
           </h1>
           
-          <p class="text-xl text-gray-600 leading-relaxed mb-8 max-w-2xl">
+          <p class="text-md text-gray-600 leading-relaxed mb-8 max-w-2xl">
             We architect, build, and deploy scalable technology solutions that transform how enterprises operate. 
             From cloud migration to AI integration, we deliver measurable business outcomes with 98% client satisfaction.
           </p>
@@ -53,10 +53,10 @@
           </div>
           
           <div class="flex flex-col sm:flex-row items-start gap-4 mb-8">
-            <button class="btn-primary text-lg px-10 py-4 shadow-lg">
+            <button class="btn-primary text-md px-10 py-4 shadow-lg">
               Schedule Free Consultation →
             </button>
-            <button class="btn-secondary text-lg px-10 py-4">
+            <button class="btn-secondary text-md px-10 py-4">
               View Case Studies
             </button>
           </div>
