@@ -10,14 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@nuxtjs/tailwindcss": "^6.12.1",
-    "@tailwindcss/typography": "^0.5.15",
-    "gsap": "^3.12.5",
-    "nuxt": "^3.13.0",
     "@headlessui/vue": "^1.7.22",
     "@heroicons/vue": "^2.1.1",
-    "three": "^0.169.0",
-    "@types/three": "^0.169.0"
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/three": "^0.169.0",
+    "gsap": "^3.12.5",
+    "lucide-vue-next": "^0.515.0",
+    "nuxt": "^3.13.0",
+    "three": "^0.169.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.0"
