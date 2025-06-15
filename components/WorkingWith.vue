@@ -16,7 +16,9 @@
         <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           <div v-for="platform in platforms" :key="platform.name" 
                class="platform-item bg-white p-6 rounded-xl text-center card-hover group border border-gray-100">
-            <div class="text-3xl mb-2">{{ platform.icon }}</div>
+            <div class="w-8 h-8 mx-auto mb-3 flex items-center justify-center">
+              <component :is="platform.icon" class="w-6 h-6 text-gray-600 group-hover:text-gray-900 transition-colors" />
+            </div>
             <span class="text-sm font-medium text-gray-600 group-hover:text-gray-900 transition-colors">
               {{ platform.name }}
             </span>
@@ -31,20 +33,34 @@
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import {
+  WindowIcon,
+  CodeBracketIcon,
+  CubeIcon,
+  DevicePhoneMobileIcon,
+  CircleStackIcon,
+  CommandLineIcon,
+  CloudIcon,
+  ServerIcon,
+  CpuChipIcon,
+  AtSymbolIcon,
+  CircleStackIcon as DatabaseIcon,
+  RocketLaunchIcon
+} from '@heroicons/vue/24/outline'
 
 const platforms = [
-  { name: 'Microsoft', icon: '⊞' },
-  { name: 'C#', icon: '©' },
-  { name: 'Kotlin', icon: '🔷' },
-  { name: 'Android', icon: '🤖' },
-  { name: 'SQL', icon: '💾' },
-  { name: 'JavaScript', icon: '📟' },
-  { name: 'AWS', icon: '☁' },
-  { name: 'Azure', icon: '🔷' },
-  { name: 'Docker', icon: '🐳' },
-  { name: 'React', icon: '⚛' },
-  { name: 'Node.js', icon: '🟢' },
-  { name: 'Python', icon: '🐍' }
+  { name: 'Microsoft', icon: WindowIcon },
+  { name: 'C#', icon: CodeBracketIcon },
+  { name: 'Kotlin', icon: CubeIcon },
+  { name: 'Android', icon: DevicePhoneMobileIcon },
+  { name: 'SQL', icon: CircleStackIcon },
+  { name: 'JavaScript', icon: CommandLineIcon },
+  { name: 'AWS', icon: CloudIcon },
+  { name: 'Azure', icon: ServerIcon },
+  { name: 'Docker', icon: CubeIcon },
+  { name: 'React', icon: AtSymbolIcon },
+  { name: 'Node.js', icon: ServerIcon },
+  { name: 'Python', icon: RocketLaunchIcon }
 ]
 
 onMounted(() => {
