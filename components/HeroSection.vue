@@ -236,12 +236,6 @@ onMounted(() => {
       { opacity: 1, x: 0, duration: 1, delay: 0.3, ease: 'power3.out' }
     )
 
-    // Animate the key benefits
-    gsap.fromTo('.hero-content .grid div',
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.6, delay: 0.8, stagger: 0.1, ease: 'power3.out' }
-    )
-
     // Animate service items with stagger
     gsap.fromTo('.service-item',
       { opacity: 0, y: 30, scale: 0.9 },
@@ -270,11 +264,13 @@ onMounted(() => {
       })
     }
 
-    // Initialize counters
+    // Initialize counters - only if they exist
     const counters = document.querySelectorAll('.counter')
     counters.forEach(counter => {
-      const target = parseInt(counter.dataset.target)
-      animateCounter(counter, target)
+      if (counter && counter.dataset) {
+        const target = parseInt(counter.dataset.target)
+        animateCounter(counter, target)
+      }
     })
 
     // Add click handlers for service items
@@ -306,57 +302,6 @@ onMounted(() => {
       item.addEventListener('mouseleave', () => {
         gsap.to(item, {
           scale: 1,
-          duration: 0.3,
-          ease: 'power2.out'
-        })
-      })
-    })
-
-    // Enhanced stats bar animation
-    const statItems = document.querySelectorAll('.stat-item')
-    statItems.forEach(item => {
-      const counterStat = item.querySelector('.counter-stat')
-      const target = parseInt(counterStat.dataset.target)
-
-      // Initial state
-      gsap.set(counterStat, { innerHTML: 0 })
-
-      item.addEventListener('mouseenter', () => {
-        // Scale up on hover
-        gsap.to(item, {
-          scale: 1.05,
-          duration: 0.3,
-          ease: 'power2.out'
-        })
-
-        // Animate counter
-        animateCounter(counterStat, target)
-
-        // Underline animation
-        gsap.to(item.querySelector('div.w-0'), {
-          width: '100%',
-          duration: 0.3,
-          ease: 'power2.out'
-        })
-      })
-
-      item.addEventListener('mouseleave', () => {
-        gsap.to(item, {
-          scale: 1,
-          duration: 0.3,
-          ease: 'power2.out'
-        })
-
-        // Reset counter
-        gsap.to(counterStat, {
-          innerHTML: 0,
-          duration: 0.1,
-          ease: 'power2.out'
-        })
-
-        // Reset underline
-        gsap.to(item.querySelector('div.w-0'), {
-          width: 0,
           duration: 0.3,
           ease: 'power2.out'
         })
