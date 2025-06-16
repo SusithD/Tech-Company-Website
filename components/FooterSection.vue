@@ -1,101 +1,271 @@
 <template>
-  <footer class="bg-gray-900 text-white">
-    <div class="container-custom py-16">
-      <div class="grid lg:grid-cols-4 gap-8">
-        <!-- Company Info -->
-        <div class="lg:col-span-1">
-          <div class="flex items-center space-x-3 mb-6">
-            <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-              <span class="text-gray-900 font-bold text-xl">MB</span>
+  <footer class="bg-gray-900 text-white relative overflow-hidden">
+    <!-- Background Pattern -->
+    <div class="absolute inset-0 opacity-5">
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.1) 0%, transparent 50%);"></div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="absolute inset-0 opacity-10">
+      <div class="footer-float footer-float-1"></div>
+      <div class="footer-float footer-float-2"></div>
+      <div class="footer-float footer-float-3"></div>
+    </div>
+
+    <div class="container-custom py-20 relative z-10">
+      <div class="grid lg:grid-cols-6 gap-12">
+        <!-- Company Info - Enhanced -->
+        <div class="lg:col-span-2">
+          <div class="flex items-center space-x-3 mb-8">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
+              <span class="text-white font-bold text-xl">W</span>
             </div>
-            <span class="text-xl font-bold">Tech Now</span>
+            <span class="text-2xl font-bold font-heading">wavespace</span>
           </div>
-          <p class="text-gray-400 mb-6">
-            Your Unified Platform for Digital Transformation. We are the catalyst for your enterprise's digital evolution.
+          
+          <p class="text-gray-300 mb-8 text-lg leading-relaxed">
+            Wavespace is a global UI/UX design agency that boosts brand value with user-friendly, effective designs for web, mobile, and SaaS platforms.
           </p>
+          
+          <!-- Company Deck Download -->
+          <div class="mb-8">
+            <button class="inline-flex items-center bg-lime-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-lime-300 transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <span>Company Deck</span>
+              <div class="ml-3 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center">
+                <svg class="w-4 h-4 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+          
+          <!-- Social Links -->
           <div class="flex space-x-4">
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
-              <span class="text-white">📧</span>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
-              <span class="text-white">💼</span>
-            </a>
-            <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
-              <span class="text-white">🐦</span>
-            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">Instagram</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">Facebook</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">LinkedIn</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">Twitter</a>
           </div>
         </div>
         
-        <!-- Quick Links -->
-        <div>
-          <h3 class="text-white font-semibold mb-4">Quick Links</h3>
-          <ul class="space-y-2">
-            <li v-for="link in quickLinks" :key="link.name">
-              <a :href="link.href" class="text-gray-400 hover:text-white transition-colors">
-                {{ link.name }}
-              </a>
-            </li>
-          </ul>
+        <!-- Services Column 1 -->
+        <div class="lg:col-span-1">
+          <div class="space-y-6">
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">UI UX Design</span>
+            </div>
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Web Design</span>
+            </div>
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">SaaS Design</span>
+            </div>
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Webflow</span>
+            </div>
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Build Product (MVP)</span>
+            </div>
+          </div>
         </div>
-        
-        <!-- Resources -->
-        <div>
-          <h3 class="text-white font-semibold mb-4">Resources</h3>
-          <ul class="space-y-2">
-            <li v-for="resource in resources" :key="resource.name">
-              <a :href="resource.href" class="text-gray-400 hover:text-white transition-colors">
-                {{ resource.name }}
-              </a>
-            </li>
-          </ul>
+
+        <!-- Services Column 2 -->
+        <div class="lg:col-span-1">
+          <div class="space-y-6">
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Design System</span>
+            </div>
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Webflow</span>
+            </div>
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Build Product (MVP)</span>
+            </div>
+            <div class="service-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Conversion Rate.. (CRO)</span>
+            </div>
+          </div>
         </div>
-        
-        <!-- Newsletter -->
-        <div>
-          <h3 class="text-white font-semibold mb-4">Subscribe Today</h3>
-          <p class="text-gray-400 mb-4">See What's New Now</p>
-          <div class="flex">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white"
-            >
-            <button class="px-4 py-2 bg-white text-gray-900 rounded-r-lg hover:bg-gray-100 transition-colors font-semibold">
-              →
-            </button>
+
+        <!-- Portfolio Column 1 -->
+        <div class="lg:col-span-1">
+          <div class="space-y-6">
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Spacebook</span>
+            </div>
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Kodezi</span>
+            </div>
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Solon Network</span>
+            </div>
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg font-semibold">View all work</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Column 2 -->
+        <div class="lg:col-span-1">
+          <div class="space-y-6">
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Behance</span>
+            </div>
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Dribbble</span>
+            </div>
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Awwwards</span>
+            </div>
           </div>
         </div>
       </div>
-      
-      <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-        <p class="text-gray-400">
-          © 2025 MB Tech Now - All Rights Reserved.
-        </p>
+
+      <!-- Call to Action Section -->
+      <div class="mt-20 flex flex-col lg:flex-row items-start lg:items-center justify-between">
+        <div class="mb-8 lg:mb-0">
+          <p class="text-gray-400 text-lg mb-2">Let's work together</p>
+          <h3 class="text-4xl md:text-5xl font-bold text-lime-400 font-heading">Call wavespace</h3>
+        </div>
+        
+        <div class="flex items-center">
+          <button class="inline-flex items-center bg-lime-400 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-lime-300 transition-all duration-300 transform hover:scale-105 shadow-lg group">
+            <span>Get Started</span>
+            <div class="ml-3 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
+              <svg class="w-4 h-4 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="mt-16 pt-8 border-t border-gray-800">
+        <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+          <div class="mb-6 lg:mb-0">
+            <p class="text-gray-400 text-sm">
+              wavespace LLC © 2025
+            </p>
+          </div>
+          
+          <div class="flex items-center space-x-4">
+            <p class="text-gray-400 text-sm">
+              Wavespace is a limited liability company based in 
+              <span class="inline-flex items-center space-x-1">
+                <span>🇺🇸</span>
+                <span>🇱🇰</span>
+                <span>🇳🇱</span>
+              </span>
+            </p>
+            
+            <!-- Team Avatars -->
+            <div class="flex -space-x-2">
+              <div class="w-8 h-8 bg-gray-600 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">A</span>
+              </div>
+              <div class="w-8 h-8 bg-blue-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">B</span>
+              </div>
+              <div class="w-8 h-8 bg-green-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">C</span>
+              </div>
+              <div class="w-8 h-8 bg-purple-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">D</span>
+              </div>
+              <div class="w-8 h-8 bg-red-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">E</span>
+              </div>
+              <div class="w-8 h-8 bg-yellow-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">F</span>
+              </div>
+              <div class="w-8 h-8 bg-pink-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">G</span>
+              </div>
+              <div class="w-8 h-8 bg-indigo-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
+                <span class="text-xs text-white">H</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Brand Section -->
+    <div class="bg-gray-950 py-6 border-t border-gray-800">
+      <div class="container-custom">
+        <div class="text-center">
+          <h4 class="text-8xl md:text-9xl font-black text-white/10 font-heading tracking-wider">
+            wavespace
+          </h4>
+        </div>
       </div>
     </div>
   </footer>
 </template>
 
 <script setup>
-const quickLinks = [
-  { name: 'Home', href: '#' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Team', href: '#team' },
-  { name: 'Portfolio', href: '#portfolio' },
-  { name: 'Blog', href: '#blog' },
-  { name: 'Contact Us', href: '#contact' },
-  { name: 'Support', href: '#support' }
-]
+import { onMounted } from 'vue'
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-const resources = [
-  { name: 'Get Immediate Consulting', href: '#consulting' },
-  { name: 'See Success Stories', href: '#stories' },
-  { name: 'Read the Docs', href: '#docs' },
-  { name: 'Join Events', href: '#events' },
-  { name: 'Explore the Library', href: '#library' },
-  { name: 'Contribute to Open Source', href: '#opensource' },
-  { name: 'Learn About Ethical Practices', href: '#ethics' },
-  { name: 'Contact Us About Site Problems', href: '#problems' }
-]
+onMounted(() => {
+  if (process.client) {
+    gsap.registerPlugin(ScrollTrigger)
+    
+    // Animate service links
+    gsap.fromTo('.service-link',
+      { opacity: 0, x: -20 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.service-link',
+          start: 'top 90%',
+          toggleActions: 'play none none reverse'
+        }
+      }
+    )
+    
+    // Animate portfolio links
+    gsap.fromTo('.portfolio-link',
+      { opacity: 0, x: 20 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: '.portfolio-link',
+          start: 'top 90%',
+          toggleActions: 'play none none reverse'
+        }
+      }
+    )
+
+    // Animate floating elements
+    gsap.to('.footer-float-1', { y: -15, duration: 4, yoyo: true, repeat: -1, ease: 'sine.inOut' })
+    gsap.to('.footer-float-2', { y: -20, duration: 3.5, yoyo: true, repeat: -1, ease: 'sine.inOut', delay: 1 })
+    gsap.to('.footer-float-3', { y: -12, duration: 4.5, yoyo: true, repeat: -1, ease: 'sine.inOut', delay: 2 })
+  }
+})
 </script>
+
+<style scoped>
+.footer-float {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.footer-float-1 { top: 20%; left: 10%; }
+.footer-float-2 { top: 60%; right: 15%; }
+.footer-float-3 { bottom: 30%; left: 25%; }
+</style>
