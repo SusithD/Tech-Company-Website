@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-900 text-white relative overflow-hidden">
+  <footer class="bg-gray-950 text-white relative overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-5">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(147, 51, 234, 0.1) 0%, transparent 50%);"></div>
@@ -17,20 +17,17 @@
         <!-- Company Info - Enhanced -->
         <div class="lg:col-span-2">
           <div class="flex items-center space-x-3 mb-8">
-            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl flex items-center justify-center shadow-lg">
-              <span class="text-white font-bold text-xl">W</span>
-            </div>
-            <span class="text-2xl font-bold font-heading">wavespace</span>
+            <span class="text-2xl font-bold font-heading">MB Tech Now</span>
           </div>
           
           <p class="text-gray-300 mb-8 text-lg leading-relaxed">
-            Wavespace is a global UI/UX design agency that boosts brand value with user-friendly, effective designs for web, mobile, and SaaS platforms.
+            We architect, build, and deploy scalable technology solutions that transform how enterprises operate. From cloud migration to AI integration, we deliver measurable business outcomes with enterprise-grade excellence.
           </p>
           
           <!-- Company Deck Download -->
           <div class="mb-8">
             <button class="inline-flex items-center bg-lime-400 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-lime-300 transition-all duration-300 transform hover:scale-105 shadow-lg">
-              <span>Company Deck</span>
+              <span>Solutions Overview</span>
               <div class="ml-3 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center">
                 <svg class="w-4 h-4 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
@@ -41,10 +38,10 @@
           
           <!-- Social Links -->
           <div class="flex space-x-4">
-            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">Instagram</a>
-            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">Facebook</a>
             <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">LinkedIn</a>
             <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">Twitter</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">GitHub</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 text-lg">YouTube</a>
           </div>
         </div>
         
@@ -52,19 +49,19 @@
         <div class="lg:col-span-1">
           <div class="space-y-6">
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">UI UX Design</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Digital Transformation</span>
             </div>
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Web Design</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Cloud Solutions</span>
             </div>
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">SaaS Design</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">AI & Machine Learning</span>
             </div>
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Webflow</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Cybersecurity</span>
             </div>
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Build Product (MVP)</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Mobile Development</span>
             </div>
           </div>
         </div>
@@ -73,49 +70,52 @@
         <div class="lg:col-span-1">
           <div class="space-y-6">
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Design System</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Performance Optimization</span>
             </div>
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Webflow</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Enterprise Architecture</span>
             </div>
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Build Product (MVP)</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">System Integration</span>
             </div>
             <div class="service-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Conversion Rate.. (CRO)</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">24/7 IT Support</span>
             </div>
           </div>
         </div>
 
-        <!-- Portfolio Column 1 -->
+        <!-- Industries Column 1 -->
         <div class="lg:col-span-1">
           <div class="space-y-6">
             <div class="portfolio-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Spacebook</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Manufacturing</span>
             </div>
             <div class="portfolio-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Kodezi</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Healthcare</span>
             </div>
             <div class="portfolio-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Solon Network</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Financial Services</span>
             </div>
             <div class="portfolio-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg font-semibold">View all work</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg font-semibold">View all industries</span>
             </div>
           </div>
         </div>
 
-        <!-- Portfolio Column 2 -->
+        <!-- Resources Column -->
         <div class="lg:col-span-1">
           <div class="space-y-6">
             <div class="portfolio-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Behance</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Case Studies</span>
             </div>
             <div class="portfolio-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Dribbble</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Tech Blog</span>
             </div>
             <div class="portfolio-link group cursor-pointer">
-              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Awwwards</span>
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Documentation</span>
+            </div>
+            <div class="portfolio-link group cursor-pointer">
+              <span class="text-gray-300 group-hover:text-white transition-colors duration-300 text-lg">Support Center</span>
             </div>
           </div>
         </div>
@@ -124,13 +124,13 @@
       <!-- Call to Action Section -->
       <div class="mt-20 flex flex-col lg:flex-row items-start lg:items-center justify-between">
         <div class="mb-8 lg:mb-0">
-          <p class="text-gray-400 text-lg mb-2">Let's work together</p>
-          <h3 class="text-4xl md:text-5xl font-bold text-lime-400 font-heading">Call wavespace</h3>
+          <p class="text-gray-400 text-lg mb-2">Ready to transform your business?</p>
+          <h3 class="text-4xl md:text-5xl font-bold text-lime-400 font-heading">Let's build together</h3>
         </div>
         
         <div class="flex items-center">
           <button class="inline-flex items-center bg-lime-400 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg hover:bg-lime-300 transition-all duration-300 transform hover:scale-105 shadow-lg group">
-            <span>Get Started</span>
+            <span>Start Your Project</span>
             <div class="ml-3 w-8 h-8 bg-gray-900 rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
               <svg class="w-4 h-4 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7V17"></path>
@@ -145,46 +145,19 @@
         <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between">
           <div class="mb-6 lg:mb-0">
             <p class="text-gray-400 text-sm">
-              wavespace LLC © 2025
+              MB Tech Now © 2025 - Enterprise Digital Transformation Solutions
             </p>
           </div>
           
-          <div class="flex items-center space-x-4">
-            <p class="text-gray-400 text-sm">
-              Wavespace is a limited liability company based in 
-              <span class="inline-flex items-center space-x-1">
-                <span>🇺🇸</span>
-                <span>🇱🇰</span>
-                <span>🇳🇱</span>
-              </span>
-            </p>
-            
-            <!-- Team Avatars -->
-            <div class="flex -space-x-2">
-              <div class="w-8 h-8 bg-gray-600 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">A</span>
-              </div>
-              <div class="w-8 h-8 bg-blue-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">B</span>
-              </div>
-              <div class="w-8 h-8 bg-green-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">C</span>
-              </div>
-              <div class="w-8 h-8 bg-purple-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">D</span>
-              </div>
-              <div class="w-8 h-8 bg-red-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">E</span>
-              </div>
-              <div class="w-8 h-8 bg-yellow-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">F</span>
-              </div>
-              <div class="w-8 h-8 bg-pink-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">G</span>
-              </div>
-              <div class="w-8 h-8 bg-indigo-500 rounded-full border-2 border-gray-800 flex items-center justify-center">
-                <span class="text-xs text-white">H</span>
-              </div>
+          <div class="flex items-center space-x-6">
+            <div class="text-gray-400 text-sm">
+              <span class="font-semibold text-white">500+</span> Projects Delivered
+            </div>
+            <div class="text-gray-400 text-sm">
+              <span class="font-semibold text-white">98%</span> Client Satisfaction
+            </div>
+            <div class="text-gray-400 text-sm">
+              <span class="font-semibold text-white">$2.3B+</span> Client Value Generated
             </div>
           </div>
         </div>
@@ -192,11 +165,11 @@
     </div>
 
     <!-- Bottom Brand Section -->
-    <div class="bg-gray-950 py-6 border-t border-gray-800">
-      <div class="container-custom">
-        <div class="text-center">
-          <h4 class="text-8xl md:text-9xl font-black text-white/10 font-heading tracking-wider">
-            wavespace
+    <div class="bg-gray-950 py-0  overflow-hidden">
+      <div class="w-full relative">
+        <div class="text-center overflow-hidden">
+          <h4 class="text-[3rem] md:text-[6rem] lg:text-[8rem] xl:text-[12rem] font-black text-white/5 font-heading tracking-widest leading-none select-none whitespace-nowrap transform translate-y-1/2">
+            MB TECH NOW
           </h4>
         </div>
       </div>
