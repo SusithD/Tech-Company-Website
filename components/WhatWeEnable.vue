@@ -81,13 +81,13 @@
         <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 animate-pulse"></div>
         
         <div class="relative z-10">
-          <h3 class="text-4xl md:text-5xl font-bold mb-8 font-heading">
+          <h3 class="text-4xl md:text-5xl font-semibold mb-8 font-heading">
             Transforming Industries
           </h3>
           
           <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div v-for="(stat, index) in stats" :key="stat.label" class="stat-item cursor-pointer">
-              <div class="text-4xl md:text-5xl font-bold mb-2 counter" :data-target="stat.value">0</div>
+              <div class="text-4xl md:text-5xl font-semibold mb-2 counter" :data-target="stat.value">0</div>
               <div class="text-gray-300 text-sm">{{ stat.label }}</div>
             </div>
           </div>
