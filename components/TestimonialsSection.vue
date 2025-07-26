@@ -168,7 +168,7 @@ const testimonials = [
     company: 'Innovent Health',
     initials: 'RK',
     avatarClass: 'bg-gradient-to-r from-blue-600 to-purple-600',
-    quote: 'MB Tech transformed our entire digital infrastructure. Their expertise in enterprise solutions is unmatched, and the results speak for themselves.',
+    quote: 'The qexle transformed our entire digital infrastructure. Their expertise in enterprise solutions is unmatched, and the results speak for themselves.',
     rating: '5.0',
     impact: '+400%',
     impactDesc: 'System Performance'

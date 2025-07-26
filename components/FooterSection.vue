@@ -17,7 +17,7 @@
         <!-- Company Info - Enhanced -->
         <div class="lg:col-span-2">
           <div class="flex items-center space-x-3 mb-8">
-            <span class="text-2xl font-bold font-heading">MB Tech Now</span>
+            <span class="text-2xl font-bold font-heading">The qexle</span>
           </div>
           
           <p class="text-gray-300 mb-8 text-lg leading-relaxed">
@@ -145,7 +145,7 @@
         <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between">
           <div class="mb-6 lg:mb-0">
             <p class="text-gray-400 text-sm">
-              MB Tech Now © 2025 - Enterprise Digital Transformation Solutions
+              The qexle © 2025 - Enterprise Digital Transformation Solutions
             </p>
           </div>
           
@@ -168,8 +168,8 @@
     <div class="bg-gray-950 py-0  overflow-hidden">
       <div class="w-full relative">
         <div class="text-center overflow-hidden">
-          <h4 class="text-[3rem] md:text-[6rem] lg:text-[8rem] xl:text-[12rem] font-black text-white/5 font-heading tracking-widest leading-none select-none whitespace-nowrap transform translate-y-1/2">
-            MB TECH NOW
+          <h4 class="text-[4rem] md:text-[8rem] lg:text-[10rem] xl:text-[12rem] font-black text-white/5 font-heading tracking-[0.2em] leading-none select-none whitespace-nowrap transform translate-y-1/2">
+            THE QEXLE
           </h4>
         </div>
       </div>
