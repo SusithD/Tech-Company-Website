@@ -57,7 +57,7 @@
                   </div>
                   <div>
                     <div class="font-semibold text-gray-900 group-hover/item:text-blue-900 transition-colors duration-300">Email Us</div>
-                    <div class="text-gray-600 group-hover/item:text-blue-600 transition-colors duration-300">support@mbtech.com</div>
+                    <div class="text-gray-600 group-hover/item:text-blue-600 transition-colors duration-300">support@theqexle.com</div>
                   </div>
                   <div class="ml-auto opacity-0 group-hover/item:opacity-100 transition-opacity duration-300">
                     <ArrowTopRightOnSquareIcon class="w-5 h-5 text-blue-600" />

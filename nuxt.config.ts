@@ -10,7 +10,7 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
-      title: 'MB Tech Now - Digital Transformation Solutions',
+      title: 'The Qexle - Digital Transformation Solutions',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
