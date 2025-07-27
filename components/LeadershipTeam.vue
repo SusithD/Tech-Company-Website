@@ -131,7 +131,7 @@ const leaders = [
     position: 'CEO & Founder',
     initials: 'MB',
     avatarClass: 'bg-gradient-to-r from-blue-600 to-purple-600',
-    bio: 'Visionary leader with 20+ years in enterprise technology. Founded MB Tech Now with the mission to revolutionize digital transformation.',
+    bio: 'Visionary leader with 20+ years in enterprise technology. Founded The qexle with the mission to revolutionize digital transformation.',
     expertise: ['Digital Strategy', 'Enterprise Architecture', 'AI Innovation'],
     achievement: { value: '15+', label: 'Years Leadership' },
     status: 'Available'

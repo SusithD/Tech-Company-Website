@@ -150,7 +150,7 @@ const timeline = [
     quarter: 'Q3',
     icon: RocketLaunchIcon,
     title: 'Company Founded',
-    description: 'Michael Brown and Sarah Chen founded MB Tech Now with a vision to bridge the gap between cutting-edge technology and business transformation.',
+    description: 'Michael Brown and Sarah Chen founded The qexle with a vision to bridge the gap between cutting-edge technology and business transformation.',
     stats: [
       { value: '3', label: 'Founding Team' },
       { value: '$50K', label: 'Initial Investment' }

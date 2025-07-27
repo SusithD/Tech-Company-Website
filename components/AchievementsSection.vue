@@ -100,7 +100,7 @@
             
             <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
               <p>
-                At MB Tech Now, we believe that <span class="font-semibold text-gray-800">great technology comes from great people</span>. 
+                At The qexle, we believe that <span class="font-semibold text-gray-800">great technology comes from great people</span>. 
                 Our culture is built on collaboration, continuous learning, and the shared mission to make a meaningful impact 
                 through digital transformation.
               </p>

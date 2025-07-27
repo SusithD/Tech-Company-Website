@@ -37,10 +37,10 @@
 
 <script setup>
 useSeoMeta({
-  title: 'About Us - MB Tech Now | Digital Transformation Leaders',
-  ogTitle: 'About Us - MB Tech Now | Digital Transformation Leaders',
-  description: 'Learn about MB Tech Now - a leading digital transformation company helping enterprises scale with cutting-edge technology solutions.',
-  ogDescription: 'Learn about MB Tech Now - a leading digital transformation company helping enterprises scale with cutting-edge technology solutions.',
+  title: 'About Us - The qexle | Digital Transformation Leaders',
+  ogTitle: 'About Us - The qexle | Digital Transformation Leaders',
+  description: 'Learn about The qexle - a leading digital transformation company helping enterprises scale with cutting-edge technology solutions.',
+  ogDescription: 'Learn about The qexle - a leading digital transformation company helping enterprises scale with cutting-edge technology solutions.',
   ogImage: '/og-image.jpg',
   twitterCard: 'summary_large_image',
 })

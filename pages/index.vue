@@ -31,8 +31,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'MB Tech Now - Digital Transformation Solutions',
-  ogTitle: 'MB Tech Now - Digital Transformation Solutions',
+  title: 'The qexle - Digital Transformation Solutions',
+  ogTitle: 'The qexle - Digital Transformation Solutions',
   description: 'Your Unified Platform for Digital Transformation. We are the catalyst for your enterprise\'s digital evolution.',
   ogDescription: 'Your Unified Platform for Digital Transformation. We are the catalyst for your enterprise\'s digital evolution.',
   ogImage: '/og-image.jpg',

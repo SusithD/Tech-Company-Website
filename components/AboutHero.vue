@@ -17,7 +17,7 @@
         <!-- Badge -->
         <div class="inline-flex items-center bg-blue-100 text-blue-800 px-6 py-3 rounded-full text-sm font-semibold mb-8 animate-pulse">
           <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
-          ABOUT MB TECH NOW
+          ABOUT The qexle
         </div>
 
         <!-- Main Headline -->

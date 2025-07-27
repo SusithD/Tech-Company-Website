@@ -22,7 +22,7 @@
           
           <div class="space-y-6 text-lg text-gray-600 leading-relaxed">
             <p>
-              <span class="font-semibold text-gray-800">MB Tech Now began in 2009</span> with a simple yet powerful vision: 
+              <span class="font-semibold text-gray-800">The qexle began in 2009</span> with a simple yet powerful vision: 
               to bridge the gap between cutting-edge technology and business transformation. What started as a small team 
               of passionate engineers has evolved into a global leader in digital transformation.
             </p>
