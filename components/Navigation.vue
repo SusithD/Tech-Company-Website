@@ -5,9 +5,9 @@
         <!-- Logo -->
         <div class="flex items-center space-x-3">
           <div class="w-10 h-10 bg-lime-400 rounded-lg flex items-center justify-center">
-            <span class="text-gray-900 font-bold text-xl">MB</span>
+            <span class="text-gray-900 font-bold text-xl">TH</span>
           </div>
-          <span class="text-xl md:text-2xl font-bold text-white font-heading">Tech Now</span>
+          <span class="text-xl md:text-2xl font-bold text-white font-heading">The qexle</span>
         </div>
         
         <!-- Desktop Menu -->
